@@ -4,7 +4,7 @@ const quoteBtn=document.querySelector('.quoteBtn');
 
 
 const  getQuotes =async ()=>{
-    const res=await fetch('https://type.fit/api/quotes');
+    const res=await fetch('https://free-quotes-api.herokuapp.com/');
     const quotes= await res.json();
     const num=Math.floor(Math.random()*quotes.length);
     const item=quotes[num];
